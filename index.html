@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Refleksjon: Automatisering og intelligente systemer</title>
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#121a27;
+      --text:#e7edf7;
+      --muted:#a9b6cc;
+      --border:rgba(255,255,255,.12);
+      --accent:#7aa7ff;
+      --accent2:#7dffcc;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:radial-gradient(1200px 700px at 20% 0%, rgba(122,167,255,.20), transparent 60%),
+                 radial-gradient(1000px 700px at 80% 10%, rgba(125,255,204,.12), transparent 55%),
+                 var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header{
+      padding:48px 20px 24px;
+      max-width:980px;
+      margin:0 auto;
+    }
+    .pill{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    h1{margin:14px 0 10px; font-size: clamp(26px, 3.2vw, 40px);}
+    .lead{max-width:70ch; color:var(--muted); margin:0}
+    nav{
+      max-width:980px;
+      margin:0 auto;
+      padding:0 20px 18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--text);
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.05);
+      padding:10px 12px;
+      border-radius:12px;
+      font-size:14px;
+    }
+    nav a:hover{border-color:rgba(122,167,255,.5)}
+    main{
+      max-width:980px;
+      margin:0 auto;
+      padding:0 20px 60px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+    }
+    .card h2{margin:0 0 8px; font-size:20px}
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:0 0 12px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .tag{
+      border:1px solid var(--border);
+      padding:4px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+    }
+    .tag.me{border-color:rgba(125,255,204,.35)}
+    .tag.ai{border-color:rgba(122,167,255,.35)}
+    .grid2{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    @media (min-width: 860px){
+      .grid2{grid-template-columns:1fr 1fr}
+    }
+    ul{margin:10px 0 0 18px}
+    footer{
+      max-width:980px;
+      margin:0 auto;
+      padding:20px;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+    }
+    .small{font-size:13px}
+    .highlight{
+      border-left:3px solid rgba(122,167,255,.55);
+      padding-left:12px;
+      margin:12px 0 0;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="pill">VG2 IT • Automatisering og intelligente systemer • Refleksjon</div>
+    <h1>KI i webutvikling: hjelpemiddel eller erstatning?</h1>
+    <p class="lead">
+      Problemstilling: <strong>Er det greit at kunstig intelligens lager nettsider og design i stedet for mennesker – og hvordan vil dette endre rollen til webutviklere og designere de neste 5 årene?</strong>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#innledning">Innledning</a>
+    <a href="#bruk">Hvordan KI brukes</a>
+    <a href="#bransje">Påvirkning på bransjen</a>
+    <a href="#etikk">Etikk</a>
+    <a href="#lovverk">Lovverk</a>
+    <a href="#minmening">Min refleksjon</a>
+    <a href="#kibruk">Egen KI-bruk</a>
+    <a href="#kilder">Kilder</a>
+  </nav>
+
+  <main>
+    <section id="innledning" class="card">
+      <div class="meta">
+        <span class="tag me">Egne tanker</span>
+        <span class="tag">Rød tråd</span>
+      </div>
+      <h2>1. Innledning</h2>
+      <p>
+        KI blir brukt mer og mer i mange yrker. Innen webutvikling og digital design kan KI hjelpe med å lage kode,
+        foreslå layout og forbedre tekst. Det gjør arbeidet raskere, men det skaper også nye spørsmål.
+      </p>
+      <p>
+        Jeg valgte dette temaet fordi jeg er interessert i webutvikling og ønsker å jobbe med dette i framtiden.
+        Jeg vil derfor reflektere over både muligheter og utfordringer.
+      </p>
+    </section>
+
+    <section id="bruk" class="card">
+      <div class="meta">
+        <span class="tag ai">KI-generert (eksempeltekst)</span>
+        <span class="tag">Forklaring</span>
+      </div>
+      <h2>2. Hvordan KI brukes i webutvikling og design</h2>
+      <div class="grid2">
+        <div class="card" style="padding:14px">
+          <h3 style="margin:0 0 6px;font-size:16px">I utvikling</h3>
+          <ul>
+            <li>Forslag til HTML/CSS/JavaScript</li>
+            <li>Forklaring av kode og feilsøking</li>
+            <li>Automatisert testing og kvalitetskontroll</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:14px">
+          <h3 style="margin:0 0 6px;font-size:16px">I design</h3>
+          <ul>
+            <li>Utkast til layout og farger</li>
+            <li>Logo- og bilde-generering</li>
+            <li>Tekstforslag (overskrifter og beskrivelser)</li>
+          </ul>
+        </div>
+      </div>
+      <p class="highlight">
+        Poeng: KI fungerer ofte som en assistent. Men mennesker må fortsatt kontrollere kvalitet og ta viktige valg.
+      </p>
+    </section>
+
+    <section id="bransje" class="card">
+      <div class="meta">
+        <span class="tag me">Egne tanker</span>
+        <span class="tag">Refleksjon</span>
+      </div>
+      <h2>3. Hvordan påvirker KI bransjen og samfunnet?</h2>
+      <p>
+        En positiv effekt er at utvikling kan gå raskere. Små bedrifter kan lage enkle nettsider billigere,
+        og flere får tilgang til digitale løsninger. Det kan være bra for samfunnet fordi flere kan delta digitalt.
+      </p>
+      <p>
+        Samtidig kan KI endre jobbmarkedet. Enkle oppgaver kan bli automatisert, og det kan bli vanskeligere for
+        nye utviklere å få en første jobb hvis bedrifter trenger færre juniorer.
+      </p>
+      <p>
+        Jeg tror rollen til webutviklere blir mer å planlegge, kvalitetssikre og løse problemer, ikke bare skrive kode.
+        Kreativitet og forståelse av brukerbehov blir viktigere.
+      </p>
+    </section>
+
+    <section id="etikk" class="card">
+      <div class="meta">
+        <span class="tag me">Egne tanker</span>
+        <span class="tag">Etiske dilemma</span>
+      </div>
+      <h2>4. Etiske dilemmaer</h2>
+      <p>
+        Et viktig dilemma er ærlighet: Hvis man leverer KI-laget arbeid og later som at man har laget alt selv,
+        kan det være uetisk. Det gjelder både på skolen og i jobbsammenheng.
+      </p>
+      <p>
+        Et annet dilemma er originalitet. KI kan lage design som ligner på andres arbeid. Da kan det bli vanskelig å vite
+        om man ubevisst kopierer andres stil.
+      </p>
+      <p class="highlight">
+        Mitt syn: KI bør brukes med tydelig merking, og mennesker må ha ansvar for sluttresultatet.
+      </p>
+    </section>
+
+    <section id="lovverk" class="card">
+      <div class="meta">
+        <span class="tag ai">KI-generert (kort faktaoppsummering)</span>
+        <span class="tag">Lovverk</span>
+      </div>
+      <h2>5. Lovverk (relevant for eget arbeid)</h2>
+      <ul>
+        <li><strong>Åndsverkloven:</strong> beskytter verk laget av mennesker (tekst, bilder, design).</li>
+        <li><strong>GDPR/personvern:</strong> personopplysninger må behandles trygt og lovlig.</li>
+      </ul>
+      <p>
+        For webutviklere betyr dette at man må være forsiktig med bilder, tekst og data man bruker.
+        Hvis en KI-tjeneste lagrer innhold eller bruker data videre, må man vurdere personvern.
+      </p>
+    </section>
+
+    <section id="minmening" class="card">
+      <div class="meta">
+        <span class="tag me">Egne tanker</span>
+        <span class="tag">Konklusjon</span>
+      </div>
+      <h2>6. Min refleksjon</h2>
+      <p>
+        Jeg mener at det kan være greit at KI lager deler av en nettside, men ikke at KI erstatter mennesker helt.
+        KI er sterk på fart og forslag, men mennesker er best på kreativitet, kommunikasjon og ansvar.
+      </p>
+      <p>
+        De neste 5 årene tror jeg at de som lærer å bruke KI smart, får en fordel. Men man må også kunne grunnleggende
+        programmering og design, ellers blir man avhengig av KI uten å forstå resultatet.
+      </p>
+    </section>
+
+    <section id="kibruk" class="card">
+      <div class="meta">
+        <span class="tag me">Egne tanker</span>
+        <span class="tag">Kildebruk</span>
+      </div>
+      <h2>7. Egen bruk av KI</h2>
+      <p>
+        Jeg har brukt KI til å få forslag til struktur og språk. Jeg har også brukt KI til å lage noen eksemplertekster
+        (merket med “KI-generert”). Refleksjoner, mening og tilpasninger er skrevet av meg.
+      </p>
+      <p class="small">
+        Tips: Hvis læreren ønsker mer tydelighet, kan du skrive helt konkret hvilke deler KI skrev og hva du endret.
+      </p>
+    </section>
+
+    <section id="kilder" class="card">
+      <div class="meta">
+        <span class="tag">Kilder</span>
+      </div>
+      <h2>8. Kilder (fyll inn lenker)</h2>
+      <ul>
+        <li>NDLA – Kunstig intelligens (artikkel)</li>
+        <li>NDLA – Åndsverkloven og opphavsrett</li>
+        <li>Datatilsynet – KI og personvern</li>
+        <li>Lovdata – Personopplysningsloven (GDPR)</li>
+      </ul>
+      <p class="small">
+        Husk: Hvis du bruker bilder/ikoner, skriv også kilde til dem.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
